@@ -53,9 +53,9 @@
 
                     if(changeX > defaults.threshold.x) {
                         options.swipeLeft.call(this, changeX);
-                    }
-                    if(changeX < (defaults.threshold.x*-1)) {
+                    } else if(changeX < (defaults.threshold.x*-1)) {
                         options.swipeRight.call(this, changeX);
+                        console.log($(this));
                     }
                 }
             }
