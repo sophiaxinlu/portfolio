@@ -8,7 +8,7 @@
         var defaults = {
             threshold: {
                 x: 10,
-                y: 0
+                y: 10
             },
             initiate: function() {},
             swipeLeft: function() {console.log("swipeLeft");},
@@ -48,7 +48,7 @@
             function touchEnd(event) {
                 //console.log('Ending swipe gesture...')
                 var changeY = originalCoord.y - finalCoord.y;
-                if(changeY < defaults.threshold.y && changeY > (defaults.threshold.y*-1)) {
+                // if(changeY < defaults.threshold.y && changeY > (defaults.threshold.y*-1)) {
                     changeX = originalCoord.x - finalCoord.x;
 
                     if(changeX > defaults.threshold.x) {
@@ -57,7 +57,7 @@
                         options.swipeRight.call(this, changeX);
                         console.log($(this));
                     }
-                }
+                // }
             }
 
             // Swipe was canceled
