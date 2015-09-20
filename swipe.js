@@ -8,7 +8,7 @@
         var defaults = {
             threshold: {
                 x: 10,
-                y: 5
+                y: 0
             },
             initiate: function() {},
             swipeLeft: function() {console.log("swipeLeft");},
