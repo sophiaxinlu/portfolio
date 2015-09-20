@@ -13,12 +13,12 @@
         },
         swipeLeft: function(x) {
             var $target = $(this);
-            console.log("left");
+            console.log("swipe left");
             controlDeleteBtn($target, x, 'left')
         },
         swipeRight: function(x) {
-              console.log("right");
             var $target = $(this);
+            console.log("swipe right");
             controlDeleteBtn($target, x, 'right')
         }
     });

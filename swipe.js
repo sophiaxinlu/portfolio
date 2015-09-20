@@ -7,7 +7,7 @@
         // Default thresholds & swipe functions
         var defaults = {
             threshold: {
-                x: 3,
+                x: 10,
                 y: 10
             },
             initiate: function() {},
@@ -50,7 +50,7 @@
                 var changeY = originalCoord.y - finalCoord.y;
                 // if(changeY < defaults.threshold.y && changeY > (defaults.threshold.y*-1)) {
                     changeX = originalCoord.x - finalCoord.x;
-console.log(changeX);
+
                     if(changeX > defaults.threshold.x) {
                         options.swipeLeft.call(this, changeX);
                     } 
