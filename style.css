@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+}
+
+.page {
+    width: 100%;
+    font-family: 'Roboto', "Helvetica Neue", Helvetica;
+}
+
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.item {
+    color: #444;
+    border-bottom: 1px solid #ddd;
+    -webkit-user-select: none;
+    overflow: hidden;
+}
+
+.item .itemInner {
+    overflow: hidden;
+    display: inline-flex;
+    width: 125%;
+    -webkit-transition: -webkit-transform 300ms ease;
+    transition: transform  300ms ease;
+}
+
+.item .itemTitle {
+    overflow: hidden;
+    padding: 15px 10px;
+    width: 100%;
+}
+
+.item .deleteBtn {
+    background-color: #F90101;
+    width: 20%;
+    padding: 15px 0;
+    text-align:center;
+    font-weight: bold;
+    color: #fff;
+}
+
+.item .deleteBtn:active {
+    background-color: #a50010;
+}
